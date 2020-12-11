@@ -1,0 +1,48 @@
+{
+  "MOVIES":[
+    {
+      "NAME":"Avengers Endgame",
+      "IMAGE":"movie1.jpg",
+      "LINK":"https://www.imdb.com/title/tt4154796/",
+      "DESCRIPTION":"After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+      "YEAR":2019
+    }
+    ,
+
+    {
+      "NAME":"Inception",
+      "IMAGE":"movie2.jpg",
+      "LINK":"https://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1",
+      "DESCRIPTION":"A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "YEAR":2010
+    }
+    ,
+
+    {
+      "NAME":"Shutter Island",
+      "IMAGE":"movie3.jpg",
+      "LINK":"https://www.imdb.com/title/tt1130884/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.",
+      "YEAR":2010
+    }
+    ,
+
+    {
+      "NAME":"Knives Out",
+      "IMAGE":"movie4.jpg",
+      "LINK":"https://www.imdb.com/title/tt8946378/?ref_=fn_al_tt_1",
+      "DESCRIPTION":"The circumstances surrounding the death of crime novelist Harlan Thrombey are mysterious, but there's one thing that renowned Detective Benoit Blanc knows for sure -- everyone in the wildly dysfunctional Thrombey family is a suspect. Now, Blanc must sift through a web of lies and red herrings to uncover the truth.",
+      "YEAR":2019
+    }
+    ,
+
+    {
+      "NAME":"The Social Network",
+      "IMAGE":"movie5.jpg",
+      "LINK":"https://www.imdb.com/title/tt1285016/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
+      "YEAR":2010
+    }
+
+  ]
+}

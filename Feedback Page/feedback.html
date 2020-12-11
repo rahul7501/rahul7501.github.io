@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feedback Page</title>
+
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../commonCSSstyle.css">
+    <script type="text/javascript" src="../commonJS.js"></script>
+
+    <link rel="stylesheet" href="../Feedback Page/feedback.css">
+    <script type="text/javascript" src="../Feedback Page/feedback.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body onload="Comments();">
+    <div class="name-heading">
+      <h1 class="ml2" align="center">Welcome To My E-Portfolio</h1>
+      <h2 class="myname" align="center">Rahul Manwani</h2>
+      <hr>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </div>
+
+
+    <nav>
+    <ul class="contents" id="contents">
+
+      <li>
+        <a href="../Home Page/homepage.html">Home</a>
+        <ul class="sub-contents">
+          <li><a href="../Home Page/homepage.html#website-description">Description</a></li>
+          <li><a href="../Home Page/homepage.html#about-me">About Me</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="../CV Page/cv.html">CV</a>
+        <ul class="sub-contents">
+          <li><a href="../CV Page/cv.html#resume-heading">Resume</a></li>
+          <li><a href="../CV Page/cv.html#skills-heading">Skills</a></li>
+        </ul>
+      </li>
+
+      <li><a href="../Favourites Page/favourites.html">Favourites</a></li>
+
+      <li><a href="../Events Page/events.html">Events</a></li>
+
+      <li><a href="../Feedback Page/feedback.html#feedback-heading" class="active">Feedback</a></li>
+    </ul>
+    </nav>
+
+
+    <div class="main">
+      <h2 class="feedback-heading" id="feedback-heading">Feedback Form</h2>
+
+    		<div class="feedback-box" id="InputSection">
+
+          <p style="font-size:20px; font-family:Georgia;">Contact Me on any of the following platforms:<br>
+            <a href="mailto:email@example.com?subject=Mail from our Website" class="fa fa-envelope"></a>
+            <a href="https://www.instagram.com/rahul_x7/?utm_source=ig_embed" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://wa.me/971561896274" target="_blank" class="fa fa-whatsapp"></a><br><br>
+            OR<br><br>
+            Drop your feedback and reviews for this website below.</p>
+          </p>
+
+    			<form style="font-size:17px; font-family:Georgia;">
+              Name <br>
+              <input type="text" pattern="^([a-zA-Z]+(\s)*)+$" class="form-control" id="name" name="name" placeholder="Enter your name">
+              <span id=nameError></span><br><br>
+              Email ID <br>
+              <input type="text" pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" class="form-control" id="email" name="email" placeholder="Enter your Email">
+              <span id=emailError></span><br><br>
+              Comment <br>
+    				  <textarea class="form-control" rows="3" cols="30" name="comment" id="comment" placeholder="Add your comment here..."></textarea>
+              <span id=commentError></span><br><br><br><br>
+    				  <button class="green-button" type="button" onclick="addComment()">Add Comment</button><br>
+              <button class="green-button" type="button" onclick="resetInput()">Reset Form</button><br><br>
+    				  <button class="red-button" type="button" onclick="clearComments()">Clear Comments Section</button>
+    			</form><br><br>
+
+
+          <h3 style="font-size:20px; font-family:Georgia;">Comments Section</h3>
+          <div class="comments" id="comments">
+
+          </div>
+
+    		</div><br><br>
+    </div>
+
+
+    <script>
+    // Wrap every letter in a span
+     var textWrapper = document.querySelector('.ml2');
+     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+     anime.timeline({loop: true})
+       .add({
+         targets: '.ml2 .letter',
+         scale: [4,1],
+         opacity: [0,1],
+         translateZ: 0,
+         easing: "easeOutExpo",
+         duration: 950,
+         delay: (el, i) => 70*i
+       }).add({
+         targets: '.ml2',
+         opacity: 0,
+         duration: 1000,
+         easing: "easeOutExpo",
+         delay: 1000
+       });
+    </script>
+
+  </body>
+</html>

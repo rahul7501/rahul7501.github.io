@@ -1,0 +1,184 @@
+.main {
+  background-image:url("background2.jpg");
+  background-attachment: fixed;
+  max-width: 105%;
+  height:280vh;
+  margin: -50px;
+  margin-right: -70px;
+  background-position: center;
+  background-size: cover;
+ }
+
+.resume-heading, .skills-heading {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding:30px;
+  color:white;
+  font-family: Cooper Black;
+  font-size: 28px;
+  animation: glow .2s infinite alternate;
+}
+
+.link-pdf {
+  position:absolute;
+  left: 25%;
+  width: 200px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.link-xml {
+  position:absolute;
+  top:74%;
+  left: 50%;
+  width: 200px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+.link-pdf:hover, .link-xml:hover {
+  color:red;
+}
+
+.resume-image {
+  margin-left: 200px;
+  height: 450px;
+  width: 700px;
+}
+
+::selection{
+  color: #fff;
+  background: #6665ee;
+  }
+.skill-bars{
+  padding: 25px 30px;
+  width: 600px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  color:white;
+  margin-left: 200px;
+  }
+.skill-bars .bar{
+  margin: 20px 0;
+  }
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+  }
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+  }
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+  }
+@keyframes showText {
+    100%{
+      opacity: 1;
+        }
+  }
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: 0px 20px 50px 2px rgba(0, 0, 0, 0.5);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+@keyframes animate {
+    100%{
+      transform: scaleX(1);
+      }
+  }
+
+.bar .progress-line span{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background:  linear-gradient(45deg, #1fe6ff, #673AB7);
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+.bar .progress-line.html span{
+    width: 80%;
+  }
+.bar .progress-line.css span{
+    width: 50%;
+  }
+.bar .progress-line.javascript span{
+    width: 60%;
+  }
+.bar .progress-line.java span{
+    width: 90%;
+  }
+.bar .progress-line.c span{
+    width: 90%;
+  }
+.bar .progress-line.mysql span{
+    width: 80%;
+  }
+.progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+.progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+@keyframes showText2 {
+    100%{
+      opacity: 1;
+        }
+  }
+.progress-line.html span::after{
+    content: "80%";
+  }
+.progress-line.css span::after{
+    content: "50%";
+  }
+.progress-line.javascript span::after{
+    content: "60%";
+  }
+.progress-line.java span::after{
+    content: "90%";
+  }
+.progress-line.c span::after{
+    content: "90%";
+  }
+.progress-line.mysql span::after{
+    content: "80%";
+  }

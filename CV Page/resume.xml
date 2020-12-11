@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+<!DOCTYPE resume [
+
+ <!ELEMENT resume (profilePic,details,additionalInfo,education,experience,ITskills,strengths*)>
+
+ <!ELEMENT profilePic (src,style)>
+ <!ELEMENT src (#PCDATA)>
+ <!ELEMENT style (#PCDATA)>
+
+ <!ELEMENT details (name,address,phoneNo,email)>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT address (#PCDATA)>
+ <!ELEMENT phoneNo (#PCDATA)>
+ <!ELEMENT email (#PCDATA)>
+
+ <!ELEMENT additionalInfo (DOB,gender,nationality,language+,interest*)>
+ <!ELEMENT DOB (#PCDATA)>
+ <!ELEMENT gender (#PCDATA)>
+ <!ELEMENT nationality (#PCDATA)>
+ <!ELEMENT language (name)>
+ <!ELEMENT interest (name)>
+
+ <!ELEMENT education (school+,university*)>
+ <!ELEMENT school (type,graduation,name,score)>
+ <!ELEMENT university (type,course,graduation,name)>
+ <!ELEMENT type (#PCDATA)>
+ <!ELEMENT course (#PCDATA)>
+ <!ELEMENT graduation (#PCDATA)>
+
+ <!ELEMENT score (#PCDATA)>
+
+ <!ELEMENT experience (parttime*,fulltime*)>
+ <!ELEMENT parttime (title,duration,location,description)>
+ <!ELEMENT fulltime (title,duration,location,description)>
+ <!ELEMENT title (#PCDATA)>
+ <!ELEMENT duration (#PCDATA)>
+ <!ELEMENT location (#PCDATA)>
+ <!ELEMENT description (ul)>
+ <!ELEMENT ul (li+)>
+ <!ELEMENT li (#PCDATA)>
+
+ <!ELEMENT ITskills (MSapp*,ProgrammingLanguage*)>
+ <!ELEMENT MSapp (name)>
+ <!ELEMENT ProgrammingLanguage (name)>
+
+ <!ELEMENT strengths (ul)>
+
+ <!ATTLIST resume heading CDATA #REQUIRED>
+
+]>
+
+<resume heading="RESUME">
+
+
+  <profilePic>
+    <src>profilepic.jpg</src>
+    <style>;</style>
+  </profilePic>
+
+
+  <details>
+    <name>Rahul Manwani</name>
+    <address>Al Fahidi, Rivoli Bldg 301, Bur Dubai, UAE</address>
+    <phoneNo>971 56 189 6274</phoneNo>
+    <email>rahulmanwani751@gmail.com</email>
+  </details>
+
+
+  <additionalInfo>
+
+    <DOB>07-05-2001</DOB>
+    <gender>Male</gender>
+    <nationality>Indian</nationality>
+
+    <language><name>English</name></language>
+    <language><name>Hindi</name></language>
+
+    <interest><name>Football</name></interest>
+    <interest><name>Cricket</name></interest>
+    <interest><name>Computers</name></interest>
+    <interest><name>Programming/Coding</name></interest>
+
+  </additionalInfo>
+
+
+  <education>
+
+    <school>
+      <type>S.S.C</type>
+      <graduation>March 2017</graduation>
+      <name>Our Own High School Dubai</name>
+      <score>96%</score>
+    </school>
+
+    <school>
+      <type>H.S.C</type>
+      <graduation>March 2017</graduation>
+      <name>Our Own High School Dubai</name>
+      <score>88%</score>
+    </school>
+
+    <university>
+      <type>UG</type>
+      <course>Bachelor Of Computer Science: Cyber Security</course>
+      <graduation>Sept 2023</graduation>
+      <name>University Of Wollongong In Dubai</name>
+    </university>
+
+  </education>
+
+
+  <experience>
+
+      <parttime>
+        <title>Intern: Sales Promoter</title>
+        <duration>MAY 2019 - JUNE 2019, JUNE 2020 - JULY 2020</duration>
+        <location>Adidas Outlet, Sheikh Zayed Road</location>
+        <description>
+          <ul>
+            <li> Assisted customers in finding the right shoes and apparels using product knowledge. </li>
+            <li> Resolved customer complaints and negotiated solutions. </li>
+            <li> Helped in keeping check of stocks. </li>
+            <li> Maintained order of shoe shelves and apparels. </li>
+          </ul>
+        </description>
+      </parttime>
+
+      <parttime>
+        <title>Intern: Brand Promoter for Byju's</title>
+        <duration>JULY 2020 - AUGUST 2020</duration>
+        <location>Lulu Supermarket, Dubai</location>
+        <description>
+          <ul>
+            <li> Helped in brand promotion of Byju's. </li>
+            <li> Interacted with customers to brief them about the product. </li>
+            <li> Assisted customers in registration process. </li>
+          </ul>
+        </description>
+      </parttime>
+
+  </experience>
+
+
+  <ITskills>
+
+      <MSapp><name>Word</name></MSapp>
+      <MSapp><name>Excel</name></MSapp>
+      <MSapp><name>PowerPoint</name></MSapp>
+      <MSapp><name>Access</name></MSapp>
+      <MSapp><name>Outlook</name></MSapp>
+
+      <ProgrammingLanguage><name>C/C++</name></ProgrammingLanguage>
+      <ProgrammingLanguage><name>Java</name></ProgrammingLanguage>
+      <ProgrammingLanguage><name>Python</name></ProgrammingLanguage>
+      <ProgrammingLanguage><name>SQL</name></ProgrammingLanguage>
+      <ProgrammingLanguage><name>JavaScript</name></ProgrammingLanguage>
+
+  </ITskills>
+
+
+  <strengths>
+    <ul>
+      <li> An effective communicator with good presentation, negotiation, relationship and team player skills </li>
+      <li> Active listener </li>
+      <li> Good coordination with team members </li>
+      <li> Time management skills </li>
+      <li> Fluent in computer typing </li>
+    </ul>
+  </strengths>
+
+
+</resume>

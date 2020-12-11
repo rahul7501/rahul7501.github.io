@@ -1,0 +1,77 @@
+.main {
+    background-image:url("background2.jpg");
+    background-attachment: fixed;
+    max-width: 105%;
+    height:auto;/*height:240vh*/
+    margin: -50px;
+    margin-right: -70px;
+    background-position: center;
+    background-size:cover;
+  }
+
+.favourites-heading {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding:30px;
+    color:white;
+    font-family: Cooper Black;
+    font-size: 28px;
+    animation: glow .2s infinite alternate;
+  }
+
+.favmovies {
+    padding: 10px 40px;
+    margin-left:470px;
+    border-radius:6px;
+    color:white;
+    font-size:100%;
+    font-weight: 400;
+    font-family:Georgia;
+    border:none;
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #33C7FF;
+    cursor:pointer;
+  }
+.favshows {
+    padding: 10px 40px;
+    margin-left:20px;
+    border-radius:6px;
+    color:white;
+    font-size:100%;
+    font-weight: 400;
+    font-family:Georgia;
+    border:none;
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #061161, #780206); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: #33C7FF;
+    cursor:pointer;
+  }
+
+table {
+    border-collapse:separate;
+    width: 60%;
+    color:white;
+    padding: 50px;
+    margin-left: 340px;
+    margin-top: 100px;
+    display:block;
+    justify-content: center; /* Center Horizontally */
+  }
+table:hover {
+    background: rgba(0, 0, 0, 0.5);
+    cursor:text;
+  }
+th,td,tr {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+  }
+
+img {
+    height: 200px;
+    width:250px;
+  }

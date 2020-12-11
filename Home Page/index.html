@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+
+      <link rel="stylesheet" href="../commonCSSstyle.css">
+      <script type="text/javascript" src="../commonJS.js"></script>
+
+      <link rel="stylesheet" href="../Home Page/homepage.css">
+  </head>
+
+  <body>
+
+    <div class="name-heading">
+      <h1 class="ml2" align="center">Welcome To My E-Portfolio</h1>
+      <h2 class="myname" align="center">Rahul Manwani</h2>
+      <hr>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    </div>
+
+
+      <nav>
+      <ul class="contents" id="contents">
+
+        <li>
+          <a href="../Home Page/homepage.html" class="active">Home</a>
+          <ul class="sub-contents">
+            <li><a href="../Home Page/homepage.html#website-description">Description</a></li>
+            <li><a href="../Home Page/homepage.html#about-me">About Me</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../CV Page/cv.html">CV</a>
+          <ul class="sub-contents">
+            <li><a href="../CV Page/cv.html#resume-heading">Resume</a></li>
+            <li><a href="../CV Page/cv.html#skills-heading">Skills</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../Favourites Page/favourites.html">Favourites</a></li>
+
+        <li><a href="../Events Page/events.html">Events</a></li>
+
+        <li><a href="../Feedback Page/feedback.html">Feedback</a></li>
+      </ul>
+      </nav>
+
+    <div class="main">
+
+      <h2 class="web-desc-heading" id="website-description">Website Description</h2>
+      <div class="container">
+        <div class="website-description">
+          <blockquote><p>
+            This website is an assignment I was given in one of the subjects of my course.<br>
+            Along with the Home Page which contains an About Me section, my e-Portfolio includes an CV page which highlights some of my IT skills and People skills.
+            The CV page also includes an attached copy of my resume which has description of various part-time jobs I have taken over the years.<br>
+            In addition to the CV page, my e-portfolio also includes a Favourites Page which lists few of my favourite TV-series and Movies.<br>
+            My favourite segment of this e-portfolio,The Events page, has some photos of the most memorable moments I have experienced with my friends and family.<br>
+            The last segment of this e-portfolio is a Feedback page holding information about how you can get in touch with me. This page also has a comments section where you can give your reviews about this website.
+            <br><br><span style="font-family: Berlin Sans FB">Hope You Enjoy Reading Through My E-Portfolio! :)</span>
+          </p></blockquote>
+        </div>
+      </div><br>
+
+
+    <h2 class="about-me-heading" id="about-me">About Me</h2>
+    <div class="about-me">
+      <h3 align="center" style="font-family:Times New Roman; font-size: 25px;">About Me</h3>
+        <hr style="width:50%">
+        <blockquote><p>
+          My Name is Rahul Manwani. I'm 19 years old.<br><br>
+          I'm currently pursuing my Bachelor's degree in Computer Science at University Of Wollongong in Dubai.<br><br>
+          I plan to get my majors in Cyber-Security and work as a Cryptographer and/or as a Security Architect.
+          Along with cybersecurity, I'm also interested in Artificial Intelligence and I'm looking forward to learning more about it.
+        </p></blockquote>
+        <img class="about-me-image"src="about-me.jpeg" alt="about-me_img" height="500" width="500">
+    </div>
+
+  </div>
+
+  <script>
+  // Wrap every letter in a span
+   var textWrapper = document.querySelector('.ml2');
+   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+   anime.timeline({loop: true})
+     .add({
+       targets: '.ml2 .letter',
+       scale: [4,1],
+       opacity: [0,1],
+       translateZ: 0,
+       easing: "easeOutExpo",
+       duration: 950,
+       delay: (el, i) => 70*i
+     }).add({
+       targets: '.ml2',
+       opacity: 0,
+       duration: 1000,
+       easing: "easeOutExpo",
+       delay: 1000
+     });
+  </script>
+
+  </body>
+</html>

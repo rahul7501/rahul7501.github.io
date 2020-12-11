@@ -1,0 +1,21 @@
+.main {
+ background-image:url("events-bg.jpg");
+ background-attachment: fixed;
+ max-width: 105%;
+ height:auto;/*height:240vh*/
+ margin:-50px;
+ margin-right:-70px;
+ background-position: center;
+ background-size: cover;
+}
+
+.events-heading {
+ text-align: center;
+ margin-top: 50px;
+ padding-top: 50px;
+ padding:30px;
+ color:white;
+ font-family: Cooper Black;
+ font-size: 28px;
+ animation: glow .2s infinite alternate;
+}

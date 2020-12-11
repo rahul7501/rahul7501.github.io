@@ -1,0 +1,48 @@
+{
+  "SHOWS":[
+    {
+      "NAME":"Breaking Bad",
+      "IMAGE":"show1.jpg",
+      "LINK":"https://www.imdb.com/title/tt0903747/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. ... Determined to ensure that his family will have a secure future, Walt embarks on a career of drugs and crime.",
+      "YEAR":"2008-2013"
+    }
+    ,
+
+    {
+      "NAME":"Money Heist",
+      "IMAGE":"show2.jpg",
+      "LINK":"https://www.imdb.com/title/tt6468322/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - stealing 2.4 billion euros from the Royal Mint of Spain.",
+      "YEAR":"2017-present"
+    }
+    ,
+
+    {
+      "NAME":"Sherlock",
+      "IMAGE":"show3.jpg",
+      "LINK":"https://www.imdb.com/title/tt1475582/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London. ... Sherlock Holmes lives in 21st century London, a city filled with mystery, crime and deceit. The back streets are alive with robbers, blackmailers, smugglers and serial killers.",
+      "YEAR":"2010-2017"
+    }
+    ,
+
+    {
+      "NAME":"Dark",
+      "IMAGE":"show4.png",
+      "LINK":"https://www.imdb.com/title/tt5753856/?ref_=nv_sr_srsg_3",
+      "DESCRIPTION":"A family saga with a supernatural twist, set in a German town, where the disappearance of two young children exposes the relationships among four families.",
+      "YEAR":"2017-2020"
+    }
+    ,
+
+    {
+      "NAME":"Prison Break",
+      "IMAGE":"show5.jpg",
+      "LINK":"https://www.imdb.com/title/tt0455275/?ref_=nv_sr_srsg_0",
+      "DESCRIPTION":"Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside.",
+      "YEAR":"2005-2017"
+    }
+
+  ]
+}

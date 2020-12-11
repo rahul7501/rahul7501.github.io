@@ -1,0 +1,116 @@
+.main {
+ background-image:url("feedback-bg.jpg");
+ background-attachment: fixed;
+ max-width: 105%;
+ height:auto;/*height:240vh*/
+ margin: -50px;
+ margin-right: -70px;
+ background-position: center;
+ background-size: cover;
+ }
+
+.feedback-heading {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding:30px;
+  color:white;
+  font-family: Cooper Black;
+  font-size: 28px;
+  animation: glow .2s infinite alternate;
+}
+
+.feedback-box {
+  width: 50%;
+  height: 100%;
+  margin-left: 300px;
+  padding: 40px;
+  color: #fff;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.comments {
+  border: 3px solid white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-instagram {
+  background: #9900FF;
+  color: white;
+}
+.fa-whatsapp  {
+color:#fff;
+background:
+linear-gradient(#25d366,#25d366)10px 84%/15px 15px no-repeat,
+radial-gradient(#25d366 59%,transparent 0);
+}
+.fa-envelope {
+  color:red;
+}
+.fa {
+  padding: 4px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px;
+  border-radius: 50%;
+}
+
+input[type=text] {
+  padding:3px;
+  margin:3px;
+  margin-bottom:10px;
+  border-radius:3px;
+  height: 17px;
+  width: 220px;
+  border: 1px solid lightgray;
+}
+
+textarea{
+  padding:3px;
+  margin:3px;
+  margin-bottom:10px;
+  border-radius:3px;
+  border: 1px solid lightgray;
+}
+
+.green-button {
+  background: #00FF33;
+  color: black;
+  border:none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: Berlin Sans FB;
+  font-size:80%;
+  padding: 7px;
+  margin:8px;
+  margin-left:10px;
+  cursor:pointer;
+}
+
+.red-button {
+  background: #FD1C03;
+  color: black;
+  border:none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-family: Berlin Sans FB;
+  font-size:90%;
+  padding: 7px;
+  margin:8px;
+  margin-left:10px;
+  cursor:pointer;
+}
+
+.comments {
+  padding:20px;
+}
+
+#nameError,#commentError,#emailError {
+  color:red;
+  font-style:italic;
+  font-size:13px;
+}

@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Favourites Page</title>
+
+    <link rel="stylesheet" href="../commonCSSstyle.css">
+    <script type="text/javascript" src="../commonJS.js"></script>
+
+    <link rel="stylesheet" href="../Favourites Page/favourites.css">
+    <script type="text/javascript" src="../Favourites Page/favourites.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    </head>
+
+    <body>
+
+      <div class="name-heading">
+        <h1 class="ml2" align="center">Welcome To My E-Portfolio</h1>
+        <h2 class="myname" align="center">Rahul Manwani</h2>
+        <hr>
+      </div>
+
+
+      <nav>
+      <ul class="contents" id="contents">
+
+        <li>
+          <a href="../Home Page/homepage.html">Home</a>
+          <ul class="sub-contents">
+            <li><a href="../Home Page/homepage.html#website-description">Description</a></li>
+            <li><a href="../Home Page/homepage.html#about-me">About Me</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="../CV Page/cv.html">CV</a>
+          <ul class="sub-contents">
+            <li><a href="../CV Page/cv.html#resume-heading">Resume</a></li>
+            <li><a href="../CV Page/cv.html#skills-heading">Skills</a></li>
+          </ul>
+        </li>
+
+        <li><a href="../Favourites Page/favourites.html#favourites-heading" class="active">Favourites</a></li>
+
+        <li><a href="../Events Page/events.html">Events</a></li>
+
+        <li><a href="../Feedback Page/feedback.html">Feedback</a></li>
+      </ul>
+      </nav>
+
+      <div class="main">
+        <h2 class="favourites-heading" id="favourites-heading">Favourites</h2>
+
+        <button type="button" name="movies" class="favmovies" onclick="displayMovies()">Favourite Movies</button>
+        <button type="button" name="shows" class="favshows" onclick="displayShows()">Favourite TV Shows</button>
+
+        <table id="table"></table>
+        <br><br><br>
+      </div>
+
+
+      <script>
+      // Wrap every letter in a span
+       var textWrapper = document.querySelector('.ml2');
+       textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+       anime.timeline({loop: true})
+         .add({
+           targets: '.ml2 .letter',
+           scale: [4,1],
+           opacity: [0,1],
+           translateZ: 0,
+           easing: "easeOutExpo",
+           duration: 950,
+           delay: (el, i) => 70*i
+         }).add({
+           targets: '.ml2',
+           opacity: 0,
+           duration: 1000,
+           easing: "easeOutExpo",
+           delay: 1000
+         });
+      </script>
+
+  </body>
+</html>

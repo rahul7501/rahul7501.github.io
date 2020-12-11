@@ -1,0 +1,119 @@
+.name-heading {
+    text-align: center;
+    color:red;
+    font-family:Sitka Small;
+    padding: 10px;
+    margin-top: 20px;
+    background-image:url("background1.jpg");
+    max-width: 100%;
+    height:20vh;
+    margin: -10px;
+    background-position: center;
+  }
+
+.myname {
+    margin: -20px;
+    font-family: Viner Hand ITC;
+    font-size: 36px;
+    font-weight: 900;
+    animation: glow1 .4s infinite alternate;
+    color: black;
+  }
+
+@keyframes glow1 {
+to {
+    text-shadow: 0 0 10px #FF0000;
+   }
+  }
+
+.ml2 {
+    font-weight: 900;
+    font-size: 30px;
+    font-family:Sitka Small;
+    color:#FFFAFA;
+  }
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+hr {
+    border:5px solid white;
+    border-radius: 10px;
+    width:50%;
+     }
+
+nav {
+    text-align: center;
+    font-family: Cooper Black;
+    background-image:url("background1.jpg");
+    background-attachment: fixed;
+    margin: -10px;
+    margin-right: -100px;
+    max-width: 102%;
+    height:32vh;
+  }
+
+.contents  {
+    display: inline-block;
+  }
+.contents>li {
+    float: left;
+    color: white;
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    opacity: 0.9;
+    cursor: pointer;
+    font-size: 25px;
+    animation: glow .2s infinite alternate;
+  }
+@keyframes glow {
+    to {
+      text-shadow: 0 0 10px #00FF00;
+       }
+  }
+.sub-contents {
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+  }
+.sub-contents li {
+    font-size:22px;
+    opacity: 0.9;
+    padding: 8px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transform: scale(0);
+    transform-origin: top center;
+    transition: all 300ms ease-in-out;
+    border:0;
+  }
+.sub-contents>li:hover {
+    text-decoration: underline;
+    background-color: #666;
+    display: block;
+  }
+.contents>li a:hover {
+    text-decoration: underline;
+    background-color: #666;
+    display: block;
+  }
+.contents>li:hover .sub-contents li {
+    transform: scale(1);
+    transition: 0.6s all ease;
+  }
+.contents>li:hover .sub-contents {
+    transform: scale(1);
+  }
+.active {
+    background-color: #666;
+    display: block;
+  }
+li>a {
+    text-decoration: none;
+    color: #fff;
+  }
+ul {
+    list-style-type: none;
+  }
